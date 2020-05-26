@@ -1,0 +1,13 @@
+package com.org.run;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="Features",
+                 glue="com.org.step",tags={"@Login"})
+public class Runner {
+
+}
